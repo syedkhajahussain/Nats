@@ -1,32 +1,4 @@
-# import asyncio
-# import websockets
-# import json
 
-# async def receive_messages():
-#     uri = "ws://localhost:8080"
-
-#     async with websockets.connect(uri) as ws:
-#         print("✅ Connected to NATS WebSocket!")
-
-#         # Subscribe to a subject
-#         sub_message = {
-#             "op": "sub",
-#             "subject": "test.subject",
-#             "sid": 1
-#         }
-#         await ws.send(json.dumps(sub_message))
-#         print("📩 Subscribed to 'test.subject'")
-
-#         # Listen for messages
-#         try:
-#             while True:
-#                 response = await ws.recv()
-#                 print(f"📨 Received: {response}")
-#         except websockets.exceptions.ConnectionClosed:
-#             print("🔴 Connection closed")
-
-# # Run the receiver client
-# asyncio.run(receive_messages())
 import asyncio
 import nats
 
