@@ -1,4 +1,4 @@
-#NATS Messaging System with Docker and Python
+NATS Messaging System with Docker and Python
 This project demonstrates how to run a NATS server using Docker and communicate with it using Python.
 
 🚀 Running NATS with Docker
