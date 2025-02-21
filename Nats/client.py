@@ -1,24 +1,4 @@
-# import asyncio
-# import websockets
-# import json
 
-# async def send_message():
-#     uri = "ws://localhost:8080"
-    
-#     async with websockets.connect(uri) as ws:
-#         print("✅ Connected to NATS WebSocket!")
-
-#         # Publish a message
-#         pub_message = {
-#             "op": "pub",
-#             "subject": "test.subject",
-#             "payload": "Hello from Python WebSocket!"
-#         }
-#         await ws.send(json.dumps(pub_message))
-#         print("📤 Message sent!")
-
-# # Run the sender client
-# asyncio.run(send_message())
 import asyncio
 import nats
 
